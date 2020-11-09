@@ -16,7 +16,7 @@ Next you will need to get an application session token
 
 ### The data model
 
-![alt text](https://raw.githubusercontent.com/accessy/ApiExamples/main/images/SimpleDataModel1.png "A simplified data model")
+![alt text](https://raw.githubusercontent.com/accessy/ApiExamples/main/images/SimpleDataModel.png "A simplified data model")
 
 ### Organization id
 
