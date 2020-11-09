@@ -16,7 +16,34 @@ Next you will need to get an application session token
 
 ### The data model
 
+Before you get to the part of assigning access, you need to understand how you retreive information about membership and asset publications.
+
 ![alt text](https://raw.githubusercontent.com/accessy/ApiExamples/main/images/SimpleDataModel.png "A simplified data model")
+The above simplified data model visualize the relationship between entities exposed by the API.
+
+**Organization**
+
+This is the organization that your application credentials are issued from. Application credentials can only operate on a single organization.
+
+**User**
+
+Represents a registered user to Accessy.
+
+**Membership**
+
+When a user becomes part of an organization, this is established through a membership.
+
+**Asset**
+
+This is a representation of something that requires access to operate. It could be a conference room that is using a door lock to control physical access.
+
+**Asset Publication**
+
+When an asset is available to an organization, this is established through a publication.
+
+**Access Permission**
+
+To grant a user access to an asset, this is accomplished through using the asset publication and the users membership as reference.
 
 ### Organization id
 
@@ -53,3 +80,11 @@ Assigning access of an asset may be done in two ways.
 
 1. Assign personal access: [Create Access Permission](./createAccessPermission.md)
 2. Add user to an access group [Create access group](./createAccessPermissionGroup.md)
+
+---
+
+## Invite user to become a member of the organization
+
+You may invite users to become members to your organization.
+
+Invite user: [Create invitation](./createInvitation.md)
