@@ -14,6 +14,10 @@ Next you will need to get an application session token
 
 [Getting an application session token](./sessionToken.md)
 
+### The data model
+
+![alt text](https://raw.githubusercontent.com/accessy/ApiExamples/main/images/SimpleDataModel1.png "A simplified data model")
+
 ### Organization id
 
 The application credentials is issued by an organization and only one organization.
@@ -21,9 +25,7 @@ The id of the organization need to provided by several API calls.
 
 [Getting the organizationId](./organizationId.md)
 
----
-
-## Organization users
+### Organization users
 
 The organization may have users as members through membership.
 
@@ -33,9 +35,7 @@ If you know the user, you may lookup the membership. This will be needed when yo
 
 [Getting a user's membership id](./organizationMembership.md)
 
----
-
-## Organization assets
+### Organization assets
 
 The organization may have assets published to it. Either by the organization itself or by 3rd part organizations.
 
