@@ -26,3 +26,41 @@ curl --location --request POST 'https://api.accessy.se/org/admin/organization/'$
 "msisdns": ["+46123123456"]
 }'
 ```
+
+This will generate a result similar to the following:
+
+```json
+[
+  {
+    "id": "9d08f2db-3e06-40af-8f02-9c957e76e6af",
+    "organization": {
+      "id": "679716c6-426a-4752-9562-0e0e4d4e4c47",
+      "name": "My Organisation",
+      "orgNumber": "357363563",
+      "vatNumber": "2525253",
+      "domainDataEndpoint": "http://rec/rec",
+      "phoneNumber": "x",
+      "billingAddress": {
+        "id": "f324ddf6-ed18-4df9-be3d-93fb3a18517a",
+        "contact": "x",
+        "apartmentOrSuite": "x",
+        "street": "x",
+        "zip": "x",
+        "city": "x",
+        "province": "x",
+        "country": "x"
+      },
+      "membershipRequestsEnabled": false
+    },
+    "recipientMsisdn": "+46123123456",
+    "invitationMessage": "hey handsome, join us",
+    "status": "PENDING",
+    "senderName": "Application Example Application Credentials",
+    "createdAt": "2020-11-09T11:55:28.804Z",
+    "createdByApplication": true
+  }
+]
+```
+
+This is quite verbose, but the important parameter is the id.
+This is the invitation Id and will be present in the event generated when the user accepts the invitation. See [Listen for organization events](listenForOrganizationEvents.md)
