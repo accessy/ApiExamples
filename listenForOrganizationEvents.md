@@ -1,10 +1,9 @@
-# Listen for accepted invitation
+# Listen to organization events
 
 Before you continue, you will need to complete:
 
 - [Getting an application session token](./sessionToken.md)
 - [Getting the organizationId](./organizationId.md)
-- [Create invitation](./createInvitation.md)
 
 To listen for event related to your organization, you may do so using a web socket connection to the accessy API.
 

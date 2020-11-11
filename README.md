@@ -88,3 +88,13 @@ Assigning access of an asset may be done in two ways.
 You may invite users to become members to your organization.
 
 Invite user: [Create invitation](./createInvitation.md)
+
+## Issue guest access
+
+Guest access allows you to generate a weblink with access to assets.  
+[Create guest access](./createGuestAccess.md)
+
+## Listen to organization events
+
+You can receive events from Accessy API.
+[Listen to organization events](./listenForOrganizationEvents.md)
