@@ -89,10 +89,14 @@ You may invite users to become members to your organization.
 
 Invite user: [Create invitation](./createInvitation.md)
 
+---
+
 ## Issue guest access
 
 Guest access allows you to generate a weblink with access to assets.  
 [Create guest access](./createGuestAccess.md)
+
+---
 
 ## Listen to organization events
 
