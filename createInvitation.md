@@ -11,6 +11,8 @@ The user receives the invitation as a text message with a link to https://access
 
 If the user already has the app installed, a notification will be sent and the user may open the app and accept or reject the invitation.
 
+Optionally, you may add access permission groups to the invite. This will add the user to the specified access groups once the user becomes a member of the organization. 
+
 **Please note**
 
 This call requires you to use the Accept header to set version v2.
@@ -23,7 +25,8 @@ curl --location --request POST 'https://api.accessy.se/org/admin/organization/'$
 --header 'Authorization: Bearer '$SESSION_TOKEN --header 'Content-Type: application/json' --header 'Accept: application/vnd.axessions.v2+json' \
 --data-raw '{
 "message": "hey handsome, join us",
-"msisdns": ["+46123123456"]
+"msisdns": ["+46123123456"],
+"accessPermissionGroupIds":["554cc339-9b73-4fe2-942c-ef1841ccad43"]
 }'
 ```
 
